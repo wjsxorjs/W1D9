@@ -1,29 +1,30 @@
-package am;
+package pm;
 
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
 import javax.swing.JFrame;
 
-public class Frame_Ex3 extends JFrame implements KeyListener {
-	
-	public Frame_Ex3() {
+import am.MyWin;
+
+public class BfClass extends JFrame implements KeyListener {
+
+	public BfClass() {
 		
-		this.setBounds(300, 100, 500, 500);
+		
+		this.setBounds(150, 300, 500, 500);
 		this.setVisible(true);
 		
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.addWindowListener(new MyWin());
 		
 		this.addKeyListener(this);
-		
 	}
 	
-
+	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		new Frame_Ex3();
-	}
+		new BfClass();
 
+	}
 
 	@Override
 	public void keyTyped(KeyEvent e) {
@@ -31,19 +32,13 @@ public class Frame_Ex3 extends JFrame implements KeyListener {
 		
 	}
 
-
 	@Override
 	public void keyPressed(KeyEvent e) {
-		// 키보드의 키를 누를 때마다 수행하는 곳
-		
+		// TODO Auto-generated method stub
 		int code = e.getKeyCode();
-//		char ch = e.getKeyChar();
-		String str = e.getKeyText(code);
-		
-		this.setTitle(code+": "+str);
+		this.setTitle(String.valueOf(code));
 		
 	}
-
 
 	@Override
 	public void keyReleased(KeyEvent e) {
