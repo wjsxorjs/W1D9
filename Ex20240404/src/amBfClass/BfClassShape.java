@@ -1,4 +1,4 @@
-package am;
+package amBfClass;
 
 import java.awt.Color;
 

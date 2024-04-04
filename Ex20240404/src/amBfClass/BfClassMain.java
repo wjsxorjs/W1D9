@@ -1,4 +1,4 @@
-package am;
+package amBfClass;
 
 import javax.swing.JFrame;
 
