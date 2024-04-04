@@ -36,7 +36,8 @@ public class BfClass extends JFrame implements KeyListener {
 	public void keyPressed(KeyEvent e) {
 		// TODO Auto-generated method stub
 		int code = e.getKeyCode();
-		this.setTitle(String.valueOf(code));
+		String text = e.getKeyText(code);
+		this.setTitle(String.valueOf(code)+": "+text);
 		
 	}
 
