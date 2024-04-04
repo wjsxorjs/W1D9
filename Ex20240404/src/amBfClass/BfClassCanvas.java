@@ -17,7 +17,7 @@ public class BfClassCanvas extends Canvas {
 	@Override
 	public void paint(Graphics g) {
 		
-		
+		System.out.println("asd"+bcsList);
 		Iterator<BfClassShape> bcsIt = this.bcsList.iterator();
 		
 		

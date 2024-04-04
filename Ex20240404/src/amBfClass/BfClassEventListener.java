@@ -9,6 +9,7 @@ public class BfClassEventListener implements MouseListener, WindowListener {
 
 	BfClassMain classMain;
 	
+	
 	public BfClassEventListener(BfClassMain cm) {
 		// 생성자에서 Canvas를 가리키는 객체의 주소값을 가진
 		// 멤버 변수를 가진 객체인 BfClassMain의 주소값을 받고
@@ -25,8 +26,10 @@ public class BfClassEventListener implements MouseListener, WindowListener {
 		int x = e.getX();
 		int y = e.getY();
 		
+		
 		BfClassShape shp = new BfClassShape(x,y);
 		classMain.can.bcsList.add(shp);
+		
 		
 		classMain.can.repaint();
 		
