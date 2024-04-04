@@ -18,10 +18,11 @@ public class Frame_Ex1 extends JFrame implements KeyListener{
 		this.setBounds(100, 100, 400, 400);
 		this.setVisible(true);
 		
+		// 현재 창의 가운데에 생성된 캔버스를 추가한다.
 		this.add(can);
 		
-		
 		this.addWindowListener(new MyWin());
+		
 		this.addKeyListener(this);	// 키 이벤트 감지자(여기서는 this[뒤에 괄호 안에 있는 this])로 가서
 									// KeyEvent에 해당하는 동작을 찾고 수행한다.
 
