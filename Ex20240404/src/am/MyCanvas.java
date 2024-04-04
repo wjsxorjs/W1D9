@@ -10,14 +10,17 @@ public class MyCanvas extends Canvas {
 	ArrayList<MyRect> list = new ArrayList<MyRect>();
 	
 	
+	
 	@Override
 	public void paint(Graphics g) {
+		
 		
 		for(int i=0;i<list.size();i++) {
 			MyRect mr = list.get(i);
 			
 			g.setColor(mr.color);
 			g.fillRect(mr.x-(mr.w/2), mr.y-(mr.h/2), mr.w, mr.h);
+			
 		}
 		
 	}
